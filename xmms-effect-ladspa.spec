@@ -2,7 +2,7 @@ Summary:	Linux Audio Developer's Simple Plugin API plugin for xmms.
 Summary(pl):	Wtyczka Linux Audio Developer's Simple Plugin API dla xmmsa.
 Name:		xmms-effect-ladspa
 Version:	0.6
-Release:	1
+Release:	2
 License:	GPL
 Group:		X11/Applications/Multimedia
 Source0:	http://www.ecs.soton.ac.uk/~njl98r/code/ladspa/xmms_ladspa-%{version}.tar.gz
@@ -10,6 +10,8 @@ URL:		http://www.ecs.soton.ac.uk/~njl98r/code/ladspa/
 BuildRequires:	xmms-devel
 Requires:	xmms
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
+
+%define		_xmms_plugin_dir	%(xmms-config --effect-plugin-dir)
 
 %description
 XMMS LADSPA is an Effect for XMMS that provides (some of) the power of
@@ -26,14 +28,13 @@ maintained by Steve Harris.
 %setup -q -n xmms_ladspa
 
 %build
-%{__make} \
-	CFLAGS="%{rpmcflags} `xmms-config --cflags`"
+%{__cc} -Wall -shared %{rpmcflags} `xmms-config --cflags` -o ladspa.so ladspa.c
 
 %install
 rm -rf $RPM_BUILD_ROOT
-install -d $RPM_BUILD_ROOT/`xmms-config --effect-plugin-dir`/
-install ladspa.so \
-	$RPM_BUILD_ROOT/`xmms-config	--effect-plugin-dir`/
+
+install -D ladspa.so \
+	$RPM_BUILD_ROOT%{_xmms_plugin_dir}/ladspa.so
 
 %clean
 rm -rf $RPM_BUILD_ROOT
@@ -41,4 +42,4 @@ rm -rf $RPM_BUILD_ROOT
 %files
 %defattr(644,root,root,755)
 %doc README ChangeLog PLUGINS
-%attr(755,root,root) %{_libdir}/xmms/*/*.so
+%attr(755,root,root) %{_xmms_plugin_dir}/*.so
