@@ -6,6 +6,7 @@ Release:	2
 License:	GPL
 Group:		X11/Applications/Multimedia
 Source0:	http://www.ecs.soton.ac.uk/~njl98r/code/ladspa/xmms_ladspa-%{version}.tar.gz
+# Source0-md5:	b3cd498fa6206910d14a8540ac66f19f
 URL:		http://www.ecs.soton.ac.uk/~njl98r/code/ladspa/
 BuildRequires:	xmms-devel
 Requires:	xmms
