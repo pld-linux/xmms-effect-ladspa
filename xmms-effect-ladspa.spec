@@ -32,8 +32,9 @@ maintained by Steve Harris.
 
 %install
 rm -rf $RPM_BUILD_ROOT
+install -d $RPM_BUILD_ROOT%{xmms_effect_plugindir}
 
-install -D ladspa.so $RPM_BUILD_ROOT%{xmms_effect_plugindir}
+install ladspa.so $RPM_BUILD_ROOT%{xmms_effect_plugindir}
 
 %clean
 rm -rf $RPM_BUILD_ROOT
