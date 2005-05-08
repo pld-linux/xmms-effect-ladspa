@@ -1,12 +1,12 @@
 Summary:	Linux Audio Developer's Simple Plugin API plugin for XMMS
 Summary(pl):	Wtyczka Linux Audio Developer's Simple Plugin API dla XMMS-a
 Name:		xmms-effect-ladspa
-Version:	1.0
-Release:	1
-License:	GPL
+Version:	1.1
+Release:	0.1
+License:	GPL v2
 Group:		X11/Applications/Multimedia
 Source0:	http://www.ecs.soton.ac.uk/~njl98r/code/ladspa/xmms_ladspa-%{version}.tar.gz
-# Source0-md5:	492edfe3b7ccf60e7fdc7b2eb1928d6d
+# Source0-md5:	5f14d62145188d38008c4e30194916e6
 URL:		http://www.ecs.soton.ac.uk/~njl98r/code/ladspa/
 BuildRequires:	rpmbuild(macros) >= 1.125
 BuildRequires:	xmms-devel
