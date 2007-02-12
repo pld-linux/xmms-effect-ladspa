@@ -1,5 +1,5 @@
 Summary:	Linux Audio Developer's Simple Plugin API plugin for XMMS
-Summary(pl):	Wtyczka Linux Audio Developer's Simple Plugin API dla XMMS-a
+Summary(pl.UTF-8):   Wtyczka Linux Audio Developer's Simple Plugin API dla XMMS-a
 Name:		xmms-effect-ladspa
 Version:	1.1
 Release:	0.1
@@ -24,16 +24,16 @@ number of audio processing plugins written to the LADSPA
 specification, which includes all the GPL software at plugin.org.uk
 maintained by Steve Harris.
 
-%description -l pl
-XMMS LADSPA to efekt dla XMMS-a dostarczaj±cy (czê¶æ) potêgi LADSPA
+%description -l pl.UTF-8
+XMMS LADSPA to efekt dla XMMS-a dostarczajÄ…cy (czÄ™Å›Ä‡) potÄ™gi LADSPA
 (Linux Audio Developer's Simple Plugin API - prostego API dla wtyczek
-d¼wiêkowych pod Linuksem) do powszechnie u¿ywanego odtwarzacza
-d¼wiêku.
+dÅºwiÄ™kowych pod Linuksem) do powszechnie uÅ¼ywanego odtwarzacza
+dÅºwiÄ™ku.
 
-Normalnie XMMS mo¿e obs³u¿yæ tylko pojedyncze efekty, takie jak Echo,
+Normalnie XMMS moÅ¼e obsÅ‚uÅ¼yÄ‡ tylko pojedyncze efekty, takie jak Echo,
 w dodatku napisane specjalnie dla XMMS-a. Przy pomocy XMMS LADSPA
-mo¿na u¿ywaæ dowolnej liczby wtyczek przetwarzaj±cych d¼wiêk,
-napisanych zgodnie ze specyfikacj± LADSPA - w tym ca³o¶æ
+moÅ¼na uÅ¼ywaÄ‡ dowolnej liczby wtyczek przetwarzajÄ…cych dÅºwiÄ™k,
+napisanych zgodnie ze specyfikacjÄ… LADSPA - w tym caÅ‚oÅ›Ä‡
 oprogramowania na licencji GPL z plugin.org.uk, utrzymywanego przez
 Steve'a Harrisa.
 
