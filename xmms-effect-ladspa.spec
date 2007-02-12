@@ -1,5 +1,5 @@
 Summary:	Linux Audio Developer's Simple Plugin API plugin for XMMS
-Summary(pl.UTF-8):   Wtyczka Linux Audio Developer's Simple Plugin API dla XMMS-a
+Summary(pl.UTF-8):	Wtyczka Linux Audio Developer's Simple Plugin API dla XMMS-a
 Name:		xmms-effect-ladspa
 Version:	1.1
 Release:	0.1
